@@ -1,7 +1,7 @@
 #lang racket
 
 #|
-Un vendedor cobra una comisión del 3 % sobre sus ventas, pero si vendió más de $1000.- recibe un 1 % más, 
+Un vendedor cobra una comisión del 3 % sobre sus ventas, pero si vendió más de $1000. recibe un 1 % más, 
 además de un premio fijo de $200.-; preparar una función que acepte el total vendido, y devuelva la comisión a cobrar.
 |#
 
