@@ -12,11 +12,13 @@ Suponiendo los días de la semana numerados como domingo:1, lunes:2, etc., acept
     )
 )
 
+; Función principal
 (define (numeroADia numero)
     (define dias '("domingo" "lunes" "martes" "miercoles" "jueves" "viernes" "sabado")) ; Defino la lista con los días de la semana
     (cond
         [(and (number? numero) (<= numero 7) (>= numero 1)) ; Verifico que el dato ingresado sea un número y esté entre 1 y 7
-            (encontrarDia numero dias)]                     ; Si es así, llamo a encontrarDia
+            (encontrarDia numero dias)                      ; Si es así, llamo a encontrarDia
+        ]
         [else
             "Error. El número ingresado no es válido."      ; Sino, retorna error
         ]
