@@ -5,4 +5,6 @@
     > (superficieRectangulo 2 4)  =>  8
 |#
 
-(define (superficieRectangulo a b) (* a b))
+(define (superficieRectangulo a b)
+    (* a b)
+)

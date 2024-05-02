@@ -4,4 +4,6 @@
 > (duplo 4)  =>  38 
 |#
 
-(define (duplo x) (* (+ 15 x) 2))
+(define (duplo x)
+    (* (+ 15 x) 2)
+)

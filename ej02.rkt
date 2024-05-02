@@ -5,4 +5,6 @@ Escribir una función llamada triple que, dado cualquier valor x, retorne el tri
 > (triple 4)  =>  12
 |#
 
-(define (triple x) (* x 3))
+(define (triple x) 
+    (* x 3)
+)

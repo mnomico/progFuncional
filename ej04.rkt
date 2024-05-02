@@ -4,4 +4,6 @@
  		> (diferencia20 4)  =>  16
 |#
 
-(define (diferencia20 x) (abs (- x 20)))
+(define (diferencia20 x)
+	(abs (- x 20))
+)

@@ -7,10 +7,13 @@
 |#
 
 (define (pulgadas cm)
-  (/ cm 2.54))
+  (/ cm 2.54)
+)
 
 (define (pies cm)
-  (/ (pulgadas cm) 12))
+  (/ (pulgadas cm) 12)
+)
 
 (define (yardas cm)
-  (/ (pies cm) 3))
+  (/ (pies cm) 3)
+)
