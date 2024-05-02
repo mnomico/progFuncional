@@ -6,15 +6,9 @@
     > (fuerza 1000 2000 1/5)  =>  3.3365000000000005
 |#
 
-(define 10^-8 
-    (expt 10 -8)
-)
-
-(define G
-    (* 6.673 10^-8)    
-)
-
 (define (fuerza m1 m2 d) 
+    (define 10^-8 (expt 10 -8))
+    (define G (* 6.673 10^-8))
     (/ 
         (* G m1 m2) 
         (* d d)     ; d²

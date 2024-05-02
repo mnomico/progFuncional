@@ -6,11 +6,8 @@
  		> (pitagoras 3 4)  =>  5
 |#
 
-(define (pitagoras a b) 
-    (sqrt 
-        (+
-            (* a a) ; a²
-            (* b b) ; b²
-        )
-    )
+(define (pitagoras a b)
+    (define a² (* a a))
+    (define b² (* b b))
+    (sqrt (+ a² b²))
 )

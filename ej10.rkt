@@ -5,4 +5,6 @@
  		> (superficieTriangulo 2 4)  =>  4
 |#
 
-(define (superficieTriangulo base altura) (* 1/2 base altura))
+(define (superficieTriangulo base altura)
+    (* 1/2 base altura)
+)
