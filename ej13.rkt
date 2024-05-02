@@ -7,17 +7,14 @@
  	> (heron 3 4 5)  =>  6
 |#
 
-(define (p a b c)
-    (/ (+ a b c) 2) ; (a + b + c) / 2
-)
-
 (define (heron a b c)
+    (define p (/ (+ a b c) 2))
     (sqrt
         (*
-            (p a b c)       ; p
-            (- (p a b c) a) ; p - a
-            (- (p a b c) b) ; p - b
-            (- (p a b c) c) ; p - c
+            p       ; p
+            (- p a) ; p - a
+            (- p b) ; p - b
+            (- p c) ; p - c
         )
     )
 )
