@@ -7,10 +7,8 @@
 |#
 
 (define (fuerza m1 m2 d) 
-    (define 10^-8 (expt 10 -8))
-    (define G (* 6.673 10^-8))
-    (/ 
-        (* G m1 m2) 
-        (* d d)     ; d²
-    )
+    (define 10^-8 (expt 10 -8))     ; Defino 10^-8 para que sea más fácil usar
+    (define G (* 6.673 10^-8))      ; Defino G
+    (define d² (* d d))             ; Defino d²
+    (/ (* G m1 m2) d²)              ; Aplico la fórmula
 )
