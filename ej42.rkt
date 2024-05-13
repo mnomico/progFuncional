@@ -1,5 +1,7 @@
 #lang racket
 
+(provide diaJuliano)
+
 #|
 Funciones calendario: la cantidad de días transcurridos entre dos fechas puede calcularse transformándolas en días Julianos. 
 Esta es una convención astronómica que representa cada fecha como el número de días transcurridos desde el 1 de enero de 4713 AC. 
