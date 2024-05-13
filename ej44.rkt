@@ -1,5 +1,7 @@
 #lang racket
 
+(provide getdiap)
+
 #|
 Definir una función que acepte un día juliano y devuelva una lista (día mes año) con la fecha correspondiente.
 Las siguientes son fórmulas que pueden aplicarse:
