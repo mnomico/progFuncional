@@ -6,13 +6,9 @@ Escribir una función que acepte una lista y devuelva la cantidad de elementos d
 > (tamano ‘(a b c d e))  => 5
 |#
 
-(define (largoLista lista largo)
-    (cond
-        [(empty? lista) largo]
-        [else (largoLista (rest lista) (+ largo 1))]
-    )
-)
-
 (define (tamaño lista)
-    (largoLista lista 0)
+    (cond
+        [(empty? lista) 0]
+        [else (+ (tamaño (rest lista)) 1)]
+    )
 )
