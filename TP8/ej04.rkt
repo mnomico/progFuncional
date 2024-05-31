@@ -6,6 +6,7 @@ Escribir una función que acepte una lista de números enteros y devuelva la can
 > (cantidadNaturales ‘(-1 2 3 -4 5 0 2))  => 4
 |#
 
+; natural? cuenta 0 como natural
 (define (cantidadNaturales lista)
     (cond
         [(empty? lista) 0]
