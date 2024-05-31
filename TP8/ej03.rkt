@@ -6,13 +6,9 @@ Escribir una función que acepte una lista numérica y devuelva la sumatoria de 
 > (sumatoria ‘(1 2 3 4 5))  => 15
 |#
 
-(define (sumatoriaLista lista suma)
-    (cond
-        [(empty? lista) suma]
-        [else (sumatoriaLista (rest lista) (+ suma (first lista)))]
-    )
-)
-
 (define (sumatoria lista)
-    (sumatoriaLista lista 0)
+    (cond
+        [(empty? lista) 0]
+        [else (+ (first lista) (sumatoria (rest lista)))]
+    )
 )
