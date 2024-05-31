@@ -1,19 +1,14 @@
 #lang racket
 
 #|
-Definir una función que acepta una lista y dos átomos "a" y "b", y devuelve otra lista con los elementos de la primera, pero con el átomo "a" sustituido por el "b", en su primera ocurrencia.
-; (sustituida1 elB elR lista)
-> (sustituida1 'd 'a '(a b c d e d f)) => (a b c a e d f)
+Definir una función que acepte dos listas y devuelva una lista que sea la concatenación de las mismas.
+; (concatenadas lista1 lista2)
+> (concatenadas '(a b c) '(d e)) => (a b c d e)
 |#
 
-(define (sustituir a b listaNueva listaOriginal)
+(define (concatenadas lista1 lista2)
     (cond
-        [(empty? listaOriginal) listaNueva]
-        [(equal? a (first listaOriginal)) (cons listaNueva (cons b (rest listaOriginal)))]
-        [else (sustituir a b (cons listaNueva (first listaOriginal)) (rest listaOriginal))]
+        [(empty? lista1) lista2]
+        [else (cons (first lista1) (concatenadas (rest lista1) lista2))]
     )
-)
-
-(define (sustituida1 a b lista)
-    (sustituir a b '() lista)
 )
